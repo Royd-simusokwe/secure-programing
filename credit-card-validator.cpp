@@ -8,7 +8,7 @@ bool isNumberString(const std::string &s)
     int len = s.length();
     for (int i = 0; i < len; i++)
     {
-        if (s[i] < '0' || s[i] > '9')
+        if (s[i] < 0 || s[i] > 9)
             return false;
     }
     return true;
@@ -67,7 +67,7 @@ int main()
          * Step 3 is to check if the final `doubleEvenSum` is a multipler of 10.
          * If yes, it is a valid CC Number. Otherwise, Not.
          */
-        std::cout << (doubleEvensum % 10 == 0 ? "valid!" : "Invalid!") << std::endl;
+        std::cout << (doubleEvensum % 10 == 0 ? valid! : Invalid!) << std::endl;
         continue;
     }
     return (0);
